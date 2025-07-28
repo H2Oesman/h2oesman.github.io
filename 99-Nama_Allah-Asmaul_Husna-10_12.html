@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>99 Names of Allah - 10-12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .language-tab.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+        .name-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .name-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .name-card:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .name-card:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .arabic {
+            font-size: 24px;
+            text-align: right;
+            direction: rtl;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .transliteration {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .meaning {
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .description {
+            margin: 10px 0;
+        }
+        .dalil {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            padding: 8px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .bookmark-btn, .download-btn {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .bookmark-btn:hover, .download-btn:hover {
+            background-color: #2980b9;
+        }
+        .jump-to {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .jump-to select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .bonus {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>99 Names of Allah (10-12)</h1>
+        
+        <div class="bonus english-content">
+            Bonus from <a href="https://qfatima.com/a99-audio" target="_blank">https://qfatima.com/a99-audio</a>
+        </div>
+
+        <div class="language-tabs">
+            <button class="language-tab active" onclick="showLanguage('english')">English</button>
+            <button class="language-tab" onclick="showLanguage('indonesian')">Indonesian</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search names..." onkeyup="searchNames()">
+            <div>
+                <button class="bookmark-btn" onclick="bookmarkPage()">Bookmark This Page</button>
+                <button class="download-btn" onclick="downloadHTML()">Download HTML</button>
+            </div>
+        </div>
+
+        <div class="jump-to">
+            <select onchange="jumpToName(this.value)">
+                <option value="">Jump to a Name...</option>
+                <option value="al-mutakabbir">10. Al-Mutakabbir</option>
+                <option value="al-khaliq">11. Al-Khaliq</option>
+                <option value="al-bari">12. Al-Bari'</option>
+            </select>
+        </div>
+
+        <!-- English Content -->
+        <div id="english" class="language-content active">
+            <div class="name-container">
+                <!-- Al-Mutakabbir -->
+                <div class="name-card" id="al-mutakabbir">
+                    <h2>10. Al-Mutakabbir (The Supreme)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُتَكَبِّرُ</div>
+                    <div class="transliteration">Transliteration: Al-Mutakabbir</div>
+                    <div class="meaning">Meaning: The Supreme, The Possessor of All Grandeur</div>
+                    <div class="description">
+                        <p>Al-Mutakabbir means Allah is the supremely great, who manifests His greatness in all things and in all ways. He is the possessor of all rights to boast, as all greatness belongs to Him alone.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surah Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhayminu l-'Azīzu l-Jabbāru l-Mutakabbir</span><br>
+                            "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Bestower of Faith, the Overseer, the Exalted in Might, the Compeller, the Supreme..."
+                        </p>
+                        <p><a href="https://quranwbw.com/40:35" target="_blank">Surah Ghafir 40:35</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلَّذِينَ يُجَـٰدِلُونَ فِىٓ ءَايَـٰتِ ٱللَّهِ بِغَيْرِ سُلْطَـٰنٍ أَتَىٰهُمْ ۖ كَبُرَ مَقْتًا عِندَ ٱللَّهِ وَعِندَ ٱلَّذِينَ ءَامَنُوا۟</span><br>
+                            <span class="transliteration">Alladhīna yujādilūna fī āyāti llāhi bi ghayri sulṭānin atāhum kabura maqtan 'inda llāhi wa 'inda alladhīna āmanū</span><br>
+                            "Those who dispute concerning the signs of Allah without any authority having come to them - great is the hatred in the sight of Allah and of those who believe."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُتَكَبِّرُ</p>
+                        <p class="transliteration">Yā Mutakabbir</p>
+                        <p>Meaning: "O Supreme One"</p>
+                        <p>Reciting this name 662 times is said to help overcome pride and arrogance in oneself.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Mutakabbir refers to Allah being above any imperfection and the only One truly deserving of greatness. Human arrogance is condemned, while Allah's supreme greatness is His right alone.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-mutakabbir/" target="_blank">https://myislam.org/99-names-of-allah/al-mutakabbir/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Khaliq -->
+                <div class="name-card" id="al-khaliq">
+                    <h2>11. Al-Khaliq (The Creator)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْخَـٰلِقُ</div>
+                    <div class="transliteration">Transliteration: Al-Khāliq</div>
+                    <div class="meaning">Meaning: The Creator, The Maker</div>
+                    <div class="description">
+                        <p>Al-Khaliq means Allah is the creator of all things according to precise measures. He brings everything into existence from nothing and determines their nature and destinies.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:24" target="_blank">Surah Al-Hashr 59:24</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu l-Khāliqu l-Bāri'u l-Muṣawwir</span><br>
+                            "He is Allah, the Creator, the Inventor, the Fashioner..."
+                        </p>
+                        <p><a href="https://quranwbw.com/13:16" target="_blank">Surah Ar-Ra'd 13:16</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">قُلْ مَن رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ قُلِ ٱللَّهُ</span><br>
+                            <span class="transliteration">Qul man rabbu s-samāwāti wa l-arḍi quli llāh</span><br>
+                            "Say, 'Who is Lord of the heavens and earth?' Say, 'Allah.'"
+                        </p>
+                        <p><a href="https://quranwbw.com/36:81" target="_blank">Surah Ya-Sin 36:81</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">أَوَلَيْسَ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ بِقَـٰدِرٍ عَلَىٰٓ أَن يَخْلُقَ مِثْلَهُم</span><br>
+                            <span class="transliteration">A wa laysa lladhī khalaqa s-samāwāti wa l-arḍa bi qādirin 'alā an yakhluqa mithlahum</span><br>
+                            "Is not He who created the heavens and earth able to create the likes of them?"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا خَالِقُ</p>
+                        <p class="transliteration">Yā Khāliq</p>
+                        <p>Meaning: "O Creator"</p>
+                        <p>Reciting this name 731 times is said to help in matters requiring creativity and problem-solving.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir states that Al-Khaliq refers to Allah's absolute power to bring things into existence from nothingness. He creates everything with perfect wisdom and knowledge of its future state.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-khaliq/" target="_blank">https://myislam.org/99-names-of-allah/al-khaliq/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Bari' -->
+                <div class="name-card" id="al-bari">
+                    <h2>12. Al-Bari' (The Originator)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْبَارِئُ</div>
+                    <div class="transliteration">Transliteration: Al-Bāri'</div>
+                    <div class="meaning">Meaning: The Originator, The Evolver</div>
+                    <div class="description">
+                        <p>Al-Bari' means Allah is the developer of all creation, bringing everything into existence in perfect form and proportion. He initiates and perfects creation without any model.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:24" target="_blank">Surah Al-Hashr 59:24</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu l-Khāliqu l-Bāri'u l-Muṣawwir</span><br>
+                            "He is Allah, the Creator, the Inventor, the Fashioner..."
+                        </p>
+                        <p><a href="https://quranwbw.com/2:54" target="_blank">Surah Al-Baqarah 2:54</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِۦ يَـٰقَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنفُسَكُم بِٱتِّخَاذِكُمُ ٱلْعِجْلَ فَتُوبُوٓا۟ إِلَىٰ بَارِئِكُمْ</span><br>
+                            <span class="transliteration">Wa idh qāla Mūsā li qawmihī yā qawmi innakum ẓalamtum anfusakum bi ttikhadhikum al-'ijla fa tūbū ilā bāri'ikum</span><br>
+                            "And [recall] when Moses said to his people, 'O my people, indeed you have wronged yourselves by your taking of the calf [for worship]. So repent to your Creator..."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا بَارِئُ</p>
+                        <p class="transliteration">Yā Bāri'</p>
+                        <p>Meaning: "O Originator"</p>
+                        <p>Reciting this name 213 times is said to help with healing and recovery from illness.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Bari' refers to Allah's power to bring things into existence in perfect form and proportion. He creates without any precedent or model, originating all things in their perfect states.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-bari/" target="_blank">https://myislam.org/99-names-of-allah/al-bari/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indonesian Content -->
+        <div id="indonesian" class="language-content">
+            <div class="name-container">
+                <!-- Al-Mutakabbir -->
+                <div class="name-card" id="al-mutakabbir">
+                    <h2>10. Al-Mutakabbir (Yang Maha Agung)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُتَكَبِّرُ</div>
+                    <div class="transliteration">Transliterasi: Al-Mutakabbir</div>
+                    <div class="meaning">Makna: Yang Maha Agung, Pemilik Segala Keagungan</div>
+                    <div class="description">
+                        <p>Al-Mutakabbir berarti Allah adalah Yang Maha Agung, yang menunjukkan kebesaran-Nya dalam segala hal dan segala cara. Dia adalah pemilik semua hak untuk membanggakan diri, karena semua keagungan hanya milik-Nya semata.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surat Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhayminu l-'Azīzu l-Jabbāru l-Mutakabbir</span><br>
+                            "Dialah Allah, tidak ada tuhan selain Dia, Raja, Yang Maha Suci, Yang Maha Sejahtera, Pemberi Keamanan, Pengawas, Yang Maha Perkasa, Yang Memaksa, Yang Maha Agung..."
+                        </p>
+                        <p><a href="https://quranwbw.com/40:35" target="_blank">Surat Ghafir 40:35</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلَّذِينَ يُجَـٰدِلُونَ فِىٓ ءَايَـٰتِ ٱللَّهِ بِغَيْرِ سُلْطَـٰنٍ أَتَىٰهُمْ ۖ كَبُرَ مَقْتًا عِندَ ٱللَّهِ وَعِندَ ٱلَّذِينَ ءَامَنُوا۟</span><br>
+                            <span class="transliteration">Alladhīna yujādilūna fī āyāti llāhi bi ghayri sulṭānin atāhum kabura maqtan 'inda llāhi wa 'inda alladhīna āmanū</span><br>
+                            "Orang-orang yang memperdebatkan ayat-ayat Allah tanpa alasan yang sampai kepada mereka, sangat dibenci di sisi Allah dan orang-orang yang beriman."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُتَكَبِّرُ</p>
+                        <p class="transliteration">Yā Mutakabbir</p>
+                        <p>Makna: "Wahai Yang Maha Agung"</p>
+                        <p>Membaca nama ini 662 kali dikatakan dapat membantu mengatasi kesombongan dan keangkuhan dalam diri.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Mutakabbir merujuk pada Allah yang berada di atas segala ketidaksempurnaan dan satu-satunya yang benar-benar layak atas keagungan. Kesombongan manusia dikutuk, sementara keagungan tertinggi Allah adalah hak-Nya semata.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-mutakabbir/" target="_blank">https://myislam.org/99-names-of-allah/al-mutakabbir/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Khaliq -->
+                <div class="name-card" id="al-khaliq">
+                    <h2>11. Al-Khaliq (Pencipta)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْخَـٰلِقُ</div>
+                    <div class="transliteration">Transliterasi: Al-Khāliq</div>
+                    <div class="meaning">Makna: Pencipta, Pembuat</div>
+                    <div class="description">
+                        <p>Al-Khaliq berarti Allah adalah pencipta segala sesuatu sesuai dengan ukuran yang tepat. Dia mewujudkan segala sesuatu dari ketiadaan dan menentukan sifat serta takdir mereka.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:24" target="_blank">Surat Al-Hashr 59:24</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu l-Khāliqu l-Bāri'u l-Muṣawwir</span><br>
+                            "Dialah Allah, Pencipta, Pengada, Pembentuk..."
+                        </p>
+                        <p><a href="https://quranwbw.com/13:16" target="_blank">Surat Ar-Ra'd 13:16</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">قُلْ مَن رَّبُّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ قُلِ ٱللَّهُ</span><br>
+                            <span class="transliteration">Qul man rabbu s-samāwāti wa l-arḍi quli llāh</span><br>
+                            "Katakanlah: 'Siapakah Tuhan langit dan bumi?' Jawabnya: 'Allah.'"
+                        </p>
+                        <p><a href="https://quranwbw.com/36:81" target="_blank">Surat Ya-Sin 36:81</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">أَوَلَيْسَ ٱلَّذِى خَلَقَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ بِقَـٰدِرٍ عَلَىٰٓ أَن يَخْلُقَ مِثْلَهُم</span><br>
+                            <span class="transliteration">A wa laysa lladhī khalaqa s-samāwāti wa l-arḍa bi qādirin 'alā an yakhluqa mithlahum</span><br>
+                            "Dan tidaklah Tuhan yang menciptakan langit dan bumi itu berkuasa menciptakan yang serupa dengan itu?"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا خَالِقُ</p>
+                        <p class="transliteration">Yā Khāliq</p>
+                        <p>Makna: "Wahai Pencipta"</p>
+                        <p>Membaca nama ini 731 kali dikatakan dapat membantu dalam hal-hal yang membutuhkan kreativitas dan pemecahan masalah.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menyatakan bahwa Al-Khaliq merujuk pada kekuatan mutlak Allah untuk mewujudkan sesuatu dari ketiadaan. Dia menciptakan segala sesuatu dengan hikmah dan pengetahuan yang sempurna tentang keadaan masa depannya.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-khaliq/" target="_blank">https://myislam.org/99-names-of-allah/al-khaliq/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Bari' -->
+                <div class="name-card" id="al-bari">
+                    <h2>12. Al-Bari' (Yang Mengadakan)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْبَارِئُ</div>
+                    <div class="transliteration">Transliterasi: Al-Bāri'</div>
+                    <div class="meaning">Makna: Yang Mengadakan, Yang Mengembangkan</div>
+                    <div class="description">
+                        <p>Al-Bari' berarti Allah adalah pengembang semua ciptaan, mewujudkan segala sesuatu dalam bentuk dan proporsi yang sempurna. Dia memulai dan menyempurnakan penciptaan tanpa model apa pun.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:24" target="_blank">Surat Al-Hashr 59:24</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu l-Khāliqu l-Bāri'u l-Muṣawwir</span><br>
+                            "Dialah Allah, Pencipta, Pengada, Pembentuk..."
+                        </p>
+                        <p><a href="https://quranwbw.com/2:54" target="_blank">Surat Al-Baqarah 2:54</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَإِذْ قَالَ مُوسَىٰ لِقَوْمِهِۦ يَـٰقَوْمِ إِنَّكُمْ ظَلَمْتُمْ أَنفُسَكُم بِٱتِّخَاذِكُمُ ٱلْعِجْلَ فَتُوبُوٓا۟ إِلَىٰ بَارِئِكُمْ</span><br>
+                            <span class="transliteration">Wa idh qāla Mūsā li qawmihī yā qawmi innakum ẓalamtum anfusakum bi ttikhadhikum al-'ijla fa tūbū ilā bāri'ikum</span><br>
+                            "Dan (ingatlah) ketika Musa berkata kepada kaumnya: 'Hai kaumku, sesungguhnya kamu telah menganiaya dirimu sendiri karena kamu telah menjadikan anak lembu (sembahanmu), maka bertaubatlah kepada Tuhan yang menjadikan kamu..."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا بَارِئُ</p>
+                        <p class="transliteration">Yā Bāri'</p>
+                        <p>Makna: "Wahai Yang Mengadakan"</p>
+                        <p>Membaca nama ini 213 kali dikatakan dapat membantu penyembuhan dan pemulihan dari penyakit.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Bari' merujuk pada kekuatan Allah untuk mewujudkan sesuatu dalam bentuk dan proporsi yang sempurna. Dia menciptakan tanpa preseden atau model apa pun, mengawali segala sesuatu dalam keadaan sempurna.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-bari/" target="_blank">https://myislam.org/99-names-of-allah/al-bari/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 99 Names of Allah Project | Source: <a href="https://myislam.org/99-names-of-allah/" target="_blank">myislam.org</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(language).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.language-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        function searchNames() {
+            const input = document.querySelector('.search-box').value.toLowerCase();
+            const nameCards = document.querySelectorAll('.name-card');
+            
+            nameCards.forEach(card => {
+                const name = card.querySelector('h2').textContent.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function bookmarkPage() {
+            alert('Page bookmarked! (This is a demo feature. In a real application, this would save the page to your bookmarks.)');
+        }
+        
+        function downloadHTML() {
+            alert('HTML download started! (This is a demo feature. In a real application, this would download the HTML file.)');
+        }
+        
+        function jumpToName(name) {
+            if (name) {
+                const element = document.getElementById(name);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+</body>
+</html>

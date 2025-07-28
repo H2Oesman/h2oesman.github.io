@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>99 Names of Allah - 13-15</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .language-tab.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+        .name-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .name-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .name-card:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .name-card:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .arabic {
+            font-size: 24px;
+            text-align: right;
+            direction: rtl;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .transliteration {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .meaning {
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .description {
+            margin: 10px 0;
+        }
+        .dalil {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            padding: 8px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .bookmark-btn, .download-btn {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .bookmark-btn:hover, .download-btn:hover {
+            background-color: #2980b9;
+        }
+        .jump-to {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .jump-to select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .bonus {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>99 Names of Allah (13-15)</h1>
+        
+        <div class="bonus english-content">
+            Bonus from <a href="https://qfatima.com/a99-audio" target="_blank">https://qfatima.com/a99-audio</a>
+        </div>
+
+        <div class="language-tabs">
+            <button class="language-tab active" onclick="showLanguage('english')">English</button>
+            <button class="language-tab" onclick="showLanguage('indonesian')">Indonesian</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search names..." onkeyup="searchNames()">
+            <div>
+                <button class="bookmark-btn" onclick="bookmarkPage()">Bookmark This Page</button>
+                <button class="download-btn" onclick="downloadHTML()">Download HTML</button>
+            </div>
+        </div>
+
+        <div class="jump-to">
+            <select onchange="jumpToName(this.value)">
+                <option value="">Jump to a Name...</option>
+                <option value="al-musawwir">13. Al-Musawwir</option>
+                <option value="al-ghaffar">14. Al-Ghaffar</option>
+                <option value="al-qahhar">15. Al-Qahhar</option>
+            </select>
+        </div>
+
+        <!-- English Content -->
+        <div id="english" class="language-content active">
+            <div class="name-container">
+                <!-- Al-Musawwir -->
+                <div class="name-card" id="al-musawwir">
+                    <h2>13. Al-Musawwir (The Fashioner)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُصَوِّرُ</div>
+                    <div class="transliteration">Transliteration: Al-Musawwir</div>
+                    <div class="meaning">Meaning: The Fashioner, The Shaper</div>
+                    <div class="description">
+                        <p>Al-Musawwir means Allah is the one who designs and shapes all creation in the most perfect forms. He gives everything its distinct shape and characteristics.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:24" target="_blank">Surah Al-Hashr 59:24</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu l-Khāliqu l-Bāri'u l-Musawwir</span><br>
+                            "He is Allah, the Creator, the Inventor, the Fashioner..."
+                        </p>
+                        <p><a href="https://quranwbw.com/40:64" target="_blank">Surah Ghafir 40:64</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱللَّهُ ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ قَرَارًۭا وَٱلسَّمَآءَ بِنَآءًۭ وَصَوَّرَكُمْ فَأَحْسَنَ صُوَرَكُمْ</span><br>
+                            <span class="transliteration">Allāhu lladhī ja'ala lakumu l-arḍa qarāran wa s-samā'a binā'an wa ṣawwarakum fa aḥsana ṣuwarakum</span><br>
+                            "It is Allah who made for you the earth a place of settlement and the sky a ceiling and formed you and perfected your forms..."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُصَوِّرُ</p>
+                        <p class="transliteration">Yā Musawwir</p>
+                        <p>Meaning: "O Fashioner"</p>
+                        <p>Reciting this name 336 times is said to help in artistic endeavors and creative projects.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Musawwir refers to Allah's attribute of giving everything its distinct form and shape. He creates infinite variations in His creation, each perfectly suited to its purpose.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-musawwir/" target="_blank">https://myislam.org/99-names-of-allah/al-musawwir/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Ghaffar -->
+                <div class="name-card" id="al-ghaffar">
+                    <h2>14. Al-Ghaffar (The All-Forgiving)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْغَفَّارُ</div>
+                    <div class="transliteration">Transliteration: Al-Ghaffār</div>
+                    <div class="meaning">Meaning: The All-Forgiving, The Repeated Forgiver</div>
+                    <div class="description">
+                        <p>Al-Ghaffar means Allah is the one who abundantly forgives sins and conceals faults. He forgives repeatedly, no matter how often the sin is committed.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/20:82" target="_blank">Surah Taha 20:82</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَإِنِّى لَغَفَّارٌۭ لِّمَن تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا ثُمَّ ٱهْتَدَىٰ</span><br>
+                            <span class="transliteration">Wa innī la ghaffārun li man tāba wa āmana wa 'amila ṣāliḥan thumma htadā</span><br>
+                            "And indeed, I am the Perpetual Forgiver of whoever repents and believes and does righteousness and then continues in guidance."
+                        </p>
+                        <p><a href="https://quranwbw.com/71:10" target="_blank">Surah Nuh 71:10</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًۭا</span><br>
+                            <span class="transliteration">Fa qultu staghfirū rabbakum innahū kāna ghaffārā</span><br>
+                            "And said, 'Ask forgiveness of your Lord. Indeed, He is ever a Perpetual Forgiver.'"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا غَفَّارُ</p>
+                        <p class="transliteration">Yā Ghaffār</p>
+                        <p>Meaning: "O All-Forgiving One"</p>
+                        <p>Reciting this name 100 times after Isha prayer is said to bring forgiveness of sins.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir states that Al-Ghaffar emphasizes Allah's quality of forgiving sins repeatedly. He covers our faults and gives us chance after chance to repent and return to Him.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-ghaffar/" target="_blank">https://myislam.org/99-names-of-allah/al-ghaffar/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Qahhar -->
+                <div class="name-card" id="al-qahhar">
+                    <h2>15. Al-Qahhar (The Subduer)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْقَهَّارُ</div>
+                    <div class="transliteration">Transliteration: Al-Qahhār</div>
+                    <div class="meaning">Meaning: The Subduer, The Ever-Dominant</div>
+                    <div class="description">
+                        <p>Al-Qahhar means Allah is the supreme subduer who dominates all creation. Nothing happens in the universe except by His will, and He overpowers everything.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/6:61" target="_blank">Surah Al-An'am 6:61</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَهُوَ ٱلْقَاهِرُ فَوْقَ عِبَادِهِۦ</span><br>
+                            <span class="transliteration">Wa huwa l-qāhiru fawqa 'ibādih</span><br>
+                            "And He is the Subduer over His servants."
+                        </p>
+                        <p><a href="https://quranwbw.com/12:39" target="_blank">Surah Yusuf 12:39</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">أَأَرْبَابٌۭ مُّتَفَرِّقُونَ خَيْرٌ أَمِ ٱللَّهُ ٱلْوَٰحِدُ ٱلْقَهَّارُ</span><br>
+                            <span class="transliteration">A arbābun mutafarriqūna khayrun am Allāhu l-Wāḥidu l-Qahhār</span><br>
+                            "Are separate lords better or Allah, the One, the Prevailing?"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا قَهَّارُ</p>
+                        <p class="transliteration">Yā Qahhār</p>
+                        <p>Meaning: "O Subduer"</p>
+                        <p>Reciting this name 306 times is said to help overcome oppressors and tyrants.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Qahhar indicates Allah's absolute dominance over all creation. He subdues tyrants and oppressors, and nothing can resist His will or overcome His power.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-qahhar/" target="_blank">https://myislam.org/99-names-of-allah/al-qahhar/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indonesian Content -->
+        <div id="indonesian" class="language-content">
+            <div class="name-container">
+                <!-- Al-Musawwir -->
+                <div class="name-card" id="al-musawwir">
+                    <h2>13. Al-Musawwir (Pembentuk)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُصَوِّرُ</div>
+                    <div class="transliteration">Transliterasi: Al-Musawwir</div>
+                    <div class="meaning">Makna: Pembentuk, Pembuat Rupa</div>
+                    <div class="description">
+                        <p>Al-Musawwir berarti Allah adalah yang merancang dan membentuk semua ciptaan dalam bentuk yang paling sempurna. Dia memberikan segala sesuatu bentuk dan karakteristik yang khas.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:24" target="_blank">Surat Al-Hashr 59:24</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ</span><br>
+                            <span class="transliteration">Huwa llāhu l-Khāliqu l-Bāri'u l-Musawwir</span><br>
+                            "Dialah Allah, Pencipta, Pengada, Pembentuk..."
+                        </p>
+                        <p><a href="https://quranwbw.com/40:64" target="_blank">Surat Ghafir 40:64</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱللَّهُ ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ قَرَارًۭا وَٱلسَّمَآءَ بِنَآءًۭ وَصَوَّرَكُمْ فَأَحْسَنَ صُوَرَكُمْ</span><br>
+                            <span class="transliteration">Allāhu lladhī ja'ala lakumu l-arḍa qarāran wa s-samā'a binā'an wa ṣawwarakum fa aḥsana ṣuwarakum</span><br>
+                            "Allah-lah yang menjadikan bumi untukmu sebagai tempat menetap dan langit sebagai atap, dan membentukmu lalu membaguskan rupamu..."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُصَوِّرُ</p>
+                        <p class="transliteration">Yā Musawwir</p>
+                        <p>Makna: "Wahai Pembentuk"</p>
+                        <p>Membaca nama ini 336 kali dikatakan dapat membantu dalam usaha seni dan proyek kreatif.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Musawwir merujuk pada sifat Allah yang memberikan segala sesuatu bentuk dan rupa yang khas. Dia menciptakan variasi tak terbatas dalam ciptaan-Nya, masing-masing sempurna sesuai tujuannya.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-musawwir/" target="_blank">https://myislam.org/99-names-of-allah/al-musawwir/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Ghaffar -->
+                <div class="name-card" id="al-ghaffar">
+                    <h2>14. Al-Ghaffar (Yang Maha Pengampun)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْغَفَّارُ</div>
+                    <div class="transliteration">Transliterasi: Al-Ghaffār</div>
+                    <div class="meaning">Makna: Yang Maha Pengampun, Yang Berulang Kali Mengampuni</div>
+                    <div class="description">
+                        <p>Al-Ghaffar berarti Allah adalah yang berlimpah mengampuni dosa dan menutupi kesalahan. Dia mengampuni berulang kali, tidak peduli seberapa sering dosa dilakukan.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/20:82" target="_blank">Surat Taha 20:82</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَإِنِّى لَغَفَّارٌۭ لِّمَن تَابَ وَءَامَنَ وَعَمِلَ صَـٰلِحًۭا ثُمَّ ٱهْتَدَىٰ</span><br>
+                            <span class="transliteration">Wa innī la ghaffārun li man tāba wa āmana wa 'amila ṣāliḥan thumma htadā</span><br>
+                            "Dan sesungguhnya Aku Maha Pengampun bagi orang yang bertaubat, beriman, beramal saleh, kemudian tetap di jalan yang benar."
+                        </p>
+                        <p><a href="https://quranwbw.com/71:10" target="_blank">Surat Nuh 71:10</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًۭا</span><br>
+                            <span class="transliteration">Fa qultu staghfirū rabbakum innahū kāna ghaffārā</span><br>
+                            "Maka aku katakan kepada mereka: 'Mohonlah ampun kepada Tuhanmu, sesungguhnya Dia adalah Maha Pengampun.'"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا غَفَّارُ</p>
+                        <p class="transliteration">Yā Ghaffār</p>
+                        <p>Makna: "Wahai Yang Maha Pengampun"</p>
+                        <p>Membaca nama ini 100 kali setelah sholat Isya dikatakan dapat membawa pengampunan dosa.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menyatakan bahwa Al-Ghaffar menekankan sifat Allah yang mengampuni dosa berulang kali. Dia menutupi kesalahan kita dan memberi kita kesempatan demi kesempatan untuk bertaubat dan kembali kepada-Nya.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-ghaffar/" target="_blank">https://myislam.org/99-names-of-allah/al-ghaffar/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Qahhar -->
+                <div class="name-card" id="al-qahhar">
+                    <h2>15. Al-Qahhar (Yang Maha Mengalahkan)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْقَهَّارُ</div>
+                    <div class="transliteration">Transliterasi: Al-Qahhār</div>
+                    <div class="meaning">Makna: Yang Maha Mengalahkan, Yang Maha Perkasa</div>
+                    <div class="description">
+                        <p>Al-Qahhar berarti Allah adalah penakluk tertinggi yang mendominasi semua ciptaan. Tidak ada yang terjadi di alam semesta kecuali dengan kehendak-Nya, dan Dia mengalahkan segala sesuatu.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/6:61" target="_blank">Surat Al-An'am 6:61</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَهُوَ ٱلْقَاهِرُ فَوْقَ عِبَادِهِۦ</span><br>
+                            <span class="transliteration">Wa huwa l-qāhiru fawqa 'ibādih</span><br>
+                            "Dan Dialah yang berkuasa atas hamba-hamba-Nya."
+                        </p>
+                        <p><a href="https://quranwbw.com/12:39" target="_blank">Surat Yusuf 12:39</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">أَأَرْبَابٌۭ مُّتَفَرِّقُونَ خَيْرٌ أَمِ ٱللَّهُ ٱلْوَٰحِدُ ٱلْقَهَّارُ</span><br>
+                            <span class="transliteration">A arbābun mutafarriqūna khayrun am Allāhu l-Wāḥidu l-Qahhār</span><br>
+                            "Manakah yang baik, tuhan-tuhan yang bermacam-macam itu ataukah Allah Yang Maha Esa lagi Maha Perkasa?"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا قَهَّارُ</p>
+                        <p class="transliteration">Yā Qahhār</p>
+                        <p>Makna: "Wahai Yang Maha Mengalahkan"</p>
+                        <p>Membaca nama ini 306 kali dikatakan dapat membantu mengatasi penindas dan tiran.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Qahhar menunjukkan dominasi mutlak Allah atas semua ciptaan. Dia menundukkan para tiran dan penindas, dan tidak ada yang dapat menolak kehendak-Nya atau mengatasi kekuasaan-Nya.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-qahhar/" target="_blank">https://myislam.org/99-names-of-allah/al-qahhar/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 99 Names of Allah Project | Source: <a href="https://myislam.org/99-names-of-allah/" target="_blank">myislam.org</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(language).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.language-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        function searchNames() {
+            const input = document.querySelector('.search-box').value.toLowerCase();
+            const nameCards = document.querySelectorAll('.name-card');
+            
+            nameCards.forEach(card => {
+                const name = card.querySelector('h2').textContent.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function bookmarkPage() {
+            alert('Page bookmarked! (This is a demo feature. In a real application, this would save the page to your bookmarks.)');
+        }
+        
+        function downloadHTML() {
+            alert('HTML download started! (This is a demo feature. In a real application, this would download the HTML file.)');
+        }
+        
+        function jumpToName(name) {
+            if (name) {
+                const element = document.getElementById(name);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+</body>
+</html>

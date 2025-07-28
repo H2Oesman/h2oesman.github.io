@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>99 Names of Allah - 1-3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .language-tab.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+        .name-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .name-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .name-card:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .name-card:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .arabic {
+            font-size: 24px;
+            text-align: right;
+            direction: rtl;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .transliteration {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .meaning {
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .description {
+            margin: 10px 0;
+        }
+        .dalil {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            padding: 8px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .bookmark-btn, .download-btn {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .bookmark-btn:hover, .download-btn:hover {
+            background-color: #2980b9;
+        }
+        .jump-to {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .jump-to select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .bonus {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>99 Names of Allah (1-3)</h1>
+        
+        <div class="bonus english-content">
+            Bonus from <a href="https://qfatima.com/a99-audio" target="_blank">https://qfatima.com/a99-audio</a>
+        </div>
+
+        <div class="language-tabs">
+            <button class="language-tab active" onclick="showLanguage('english')">English</button>
+            <button class="language-tab" onclick="showLanguage('indonesian')">Indonesian</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search names..." onkeyup="searchNames()">
+            <div>
+                <button class="bookmark-btn" onclick="bookmarkPage()">Bookmark This Page</button>
+                <button class="download-btn" onclick="downloadHTML()">Download HTML</button>
+            </div>
+        </div>
+
+        <div class="jump-to">
+            <select onchange="jumpToName(this.value)">
+                <option value="">Jump to a Name...</option>
+                <option value="ar-rahman">1. Ar-Rahman</option>
+                <option value="ar-raheem">2. Ar-Raheem</option>
+                <option value="al-malik">3. Al-Malik</option>
+            </select>
+        </div>
+
+        <!-- English Content -->
+        <div id="english" class="language-content active">
+            <div class="name-container">
+                <!-- Ar-Rahman -->
+                <div class="name-card" id="ar-rahman">
+                    <h2>1. Ar-Rahman (The Most Gracious)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّحْمَـٰنُ</div>
+                    <div class="transliteration">Transliteration: Ar-Raḥmān</div>
+                    <div class="meaning">Meaning: The Most Gracious, The Beneficent</div>
+                    <div class="description">
+                        <p>Ar-Rahman is one of the most frequently mentioned names of Allah in the Quran. It signifies the boundless mercy and grace of Allah that encompasses all of creation, believers and non-believers alike.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/1:1" target="_blank">Surah Al-Fatihah 1:1</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</span><br>
+                            <span class="transliteration">Bismillāhi r-Raḥmāni r-Raḥīm</span><br>
+                            "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+                        </p>
+                        <p><a href="https://quranwbw.com/17:110" target="_blank">Surah Al-Isra 17:110</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">قُلِ ٱدْعُوا۟ ٱللَّهَ أَوِ ٱدْعُوا۟ ٱلرَّحْمَـٰنَ</span><br>
+                            <span class="transliteration">Quli d'ullāha awi d'ur-Raḥmān</span><br>
+                            "Say, 'Call upon Allah or call upon the Most Gracious..."
+                        </p>
+                        <p><a href="https://quranwbw.com/55:1" target="_blank">Surah Ar-Rahman 55:1</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّحْمَـٰنُ</span><br>
+                            <span class="transliteration">Ar-Raḥmān</span><br>
+                            "The Most Gracious"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَحْمَانُ</p>
+                        <p class="transliteration">Yā Raḥmān</p>
+                        <p>Meaning: "O Most Gracious One"</p>
+                        <p>Reciting this name 100 times after each prayer is said to strengthen memory and increase sustenance.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Ar-Rahman indicates the all-encompassing mercy of Allah that extends to all creation in this world, while Ar-Raheem refers specifically to His mercy towards the believers in the Hereafter.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/ar-rahman/" target="_blank">https://myislam.org/99-names-of-allah/ar-rahman/</a>
+                    </div>
+                </div>
+
+                <!-- Ar-Raheem -->
+                <div class="name-card" id="ar-raheem">
+                    <h2>2. Ar-Raheem (The Most Merciful)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّحِيمُ</div>
+                    <div class="transliteration">Transliteration: Ar-Raḥīm</div>
+                    <div class="meaning">Meaning: The Most Merciful, The Bestower of Mercy</div>
+                    <div class="description">
+                        <p>Ar-Raheem is another name that emphasizes Allah's mercy. While Ar-Rahman describes Allah's general mercy to all creation, Ar-Raheem refers specifically to His special mercy towards the believers.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/1:1" target="_blank">Surah Al-Fatihah 1:1</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</span><br>
+                            <span class="transliteration">Bismillāhi r-Raḥmāni r-Raḥīm</span><br>
+                            "In the name of Allah, the Entirely Merciful, the Especially Merciful."
+                        </p>
+                        <p><a href="https://quranwbw.com/2:163" target="_blank">Surah Al-Baqarah 2:163</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ</span><br>
+                            <span class="transliteration">Wa ilāhukum ilāhun wāḥid, lā ilāha illā huwa r-Raḥmānu r-Raḥīm</span><br>
+                            "And your god is one God. There is no deity [worthy of worship] except Him, the Most Gracious, the Most Merciful."
+                        </p>
+                        <p><a href="https://quranwbw.com/59:22" target="_blank">Surah Al-Hashr 59:22</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa r-Raḥmānu r-Raḥīm</span><br>
+                            "He is Allah, other than whom there is no deity, the Most Gracious, the Most Merciful."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَحِيمُ</p>
+                        <p class="transliteration">Yā Raḥīm</p>
+                        <p>Meaning: "O Most Merciful One"</p>
+                        <p>Reciting this name 100 times daily is said to bring protection from calamities and increase in provision.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Ar-Raheem indicates Allah's continuous mercy that is especially bestowed upon the believers. It reflects His compassion and forgiveness towards those who turn to Him in repentance.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/ar-raheem/" target="_blank">https://myislam.org/99-names-of-allah/ar-raheem/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Malik -->
+                <div class="name-card" id="al-malik">
+                    <h2>3. Al-Malik (The King)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمَلِكُ</div>
+                    <div class="transliteration">Transliteration: Al-Malik</div>
+                    <div class="meaning">Meaning: The King, The Sovereign Lord</div>
+                    <div class="description">
+                        <p>Al-Malik signifies that Allah is the absolute ruler and owner of the entire universe. His kingship is perfect, eternal, and not subject to any limitation or condition.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surah Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salām</span><br>
+                            "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Perfection..."
+                        </p>
+                        <p><a href="https://quranwbw.com/20:114" target="_blank">Surah Taha 20:114</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ</span><br>
+                            <span class="transliteration">Fa ta'ālā llāhu l-Maliku l-Ḥaqq</span><br>
+                            "So high [above all] is Allah, the Sovereign, the Truth."
+                        </p>
+                        <p><a href="https://quranwbw.com/23:116" target="_blank">Surah Al-Mu'minun 23:116</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ لَآ إِلَـٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ</span><br>
+                            <span class="transliteration">Fa ta'ālā llāhu l-Maliku l-Ḥaqq, lā ilāha illā huwa rabbu l-'arshi l-karīm</span><br>
+                            "So high [above all] is Allah, the Sovereign, the Truth. There is no deity except Him, Lord of the Noble Throne."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مَلِكُ</p>
+                        <p class="transliteration">Yā Malik</p>
+                        <p>Meaning: "O King"</p>
+                        <p>Reciting this name frequently is said to bring dignity and respect. Reciting it 90 times after Fajr prayer is recommended for sustenance.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Malik denotes Allah's absolute sovereignty over all creation. He is the true owner of everything, and all other kings and rulers derive their authority from Him.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-malik/" target="_blank">https://myislam.org/99-names-of-allah/al-malik/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indonesian Content -->
+        <div id="indonesian" class="language-content">
+            <div class="name-container">
+                <!-- Ar-Rahman -->
+                <div class="name-card" id="ar-rahman">
+                    <h2>1. Ar-Rahman (Yang Maha Pengasih)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّحْمَـٰنُ</div>
+                    <div class="transliteration">Transliterasi: Ar-Raḥmān</div>
+                    <div class="meaning">Makna: Yang Maha Pengasih, Yang Maha Pemurah</div>
+                    <div class="description">
+                        <p>Ar-Rahman adalah salah satu nama Allah yang paling sering disebut dalam Al-Quran. Nama ini menandakan rahmat dan karunia Allah yang tak terbatas yang meliputi seluruh ciptaan, baik mukmin maupun non-mukmin.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/1:1" target="_blank">Surat Al-Fatihah 1:1</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</span><br>
+                            <span class="transliteration">Bismillāhi r-Raḥmāni r-Raḥīm</span><br>
+                            "Dengan nama Allah, Yang Maha Pengasih, Maha Penyayang."
+                        </p>
+                        <p><a href="https://quranwbw.com/17:110" target="_blank">Surat Al-Isra 17:110</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">قُلِ ٱدْعُوا۟ ٱللَّهَ أَوِ ٱدْعُوا۟ ٱلرَّحْمَـٰنَ</span><br>
+                            <span class="transliteration">Quli d'ullāha awi d'ur-Raḥmān</span><br>
+                            "Katakanlah: 'Serulah Allah atau serulah Ar-Rahman..."
+                        </p>
+                        <p><a href="https://quranwbw.com/55:1" target="_blank">Surat Ar-Rahman 55:1</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّحْمَـٰنُ</span><br>
+                            <span class="transliteration">Ar-Raḥmān</span><br>
+                            "Yang Maha Pengasih"
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَحْمَانُ</p>
+                        <p class="transliteration">Yā Raḥmān</p>
+                        <p>Makna: "Wahai Yang Maha Pengasih"</p>
+                        <p>Membaca nama ini 100 kali setelah setiap sholat dikatakan dapat memperkuat ingatan dan meningkatkan rezeki.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Ar-Rahman menunjukkan rahmat Allah yang meliputi seluruh ciptaan di dunia ini, sementara Ar-Raheem merujuk khusus pada rahmat-Nya terhadap orang-orang beriman di akhirat.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/ar-rahman/" target="_blank">https://myislam.org/99-names-of-allah/ar-rahman/</a>
+                    </div>
+                </div>
+
+                <!-- Ar-Raheem -->
+                <div class="name-card" id="ar-raheem">
+                    <h2>2. Ar-Raheem (Yang Maha Penyayang)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّحِيمُ</div>
+                    <div class="transliteration">Transliterasi: Ar-Raḥīm</div>
+                    <div class="meaning">Makna: Yang Maha Penyayang, Pemberi Rahmat</div>
+                    <div class="description">
+                        <p>Ar-Raheem adalah nama lain yang menekankan rahmat Allah. Sementara Ar-Rahman menggambarkan rahmat umum Allah kepada semua ciptaan, Ar-Raheem merujuk khusus pada rahmat khusus-Nya terhadap orang-orang beriman.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/1:1" target="_blank">Surat Al-Fatihah 1:1</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ</span><br>
+                            <span class="transliteration">Bismillāhi r-Raḥmāni r-Raḥīm</span><br>
+                            "Dengan nama Allah, Yang Maha Pengasih, Maha Penyayang."
+                        </p>
+                        <p><a href="https://quranwbw.com/2:163" target="_blank">Surat Al-Baqarah 2:163</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ</span><br>
+                            <span class="transliteration">Wa ilāhukum ilāhun wāḥid, lā ilāha illā huwa r-Raḥmānu r-Raḥīm</span><br>
+                            "Dan Tuhanmu adalah Tuhan Yang Maha Esa. Tidak ada tuhan selain Dia, Yang Maha Pengasih, Maha Penyayang."
+                        </p>
+                        <p><a href="https://quranwbw.com/59:22" target="_blank">Surat Al-Hashr 59:22</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa r-Raḥmānu r-Raḥīm</span><br>
+                            "Dialah Allah, tidak ada tuhan selain Dia, Yang Maha Pengasih, Maha Penyayang."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَحِيمُ</p>
+                        <p class="transliteration">Yā Raḥīm</p>
+                        <p>Makna: "Wahai Yang Maha Penyayang"</p>
+                        <p>Membaca nama ini 100 kali setiap hari dikatakan dapat memberikan perlindungan dari bencana dan meningkatkan rezeki.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Ar-Raheem menunjukkan rahmat Allah yang terus-menerus yang khusus diberikan kepada orang-orang beriman. Ini mencerminkan belas kasihan dan pengampunan-Nya terhadap mereka yang bertaubat kepada-Nya.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/ar-raheem/" target="_blank">https://myislam.org/99-names-of-allah/ar-raheem/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Malik -->
+                <div class="name-card" id="al-malik">
+                    <h2>3. Al-Malik (Raja Segala Raja)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمَلِكُ</div>
+                    <div class="transliteration">Transliterasi: Al-Malik</div>
+                    <div class="meaning">Makna: Raja, Penguasa Yang Maha Tinggi</div>
+                    <div class="description">
+                        <p>Al-Malik menandakan bahwa Allah adalah penguasa mutlak dan pemilik seluruh alam semesta. Kerajaan-Nya sempurna, abadi, dan tidak tunduk pada batasan atau kondisi apa pun.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surat Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salām</span><br>
+                            "Dialah Allah, tidak ada tuhan selain Dia, Raja, Yang Maha Suci, Yang Maha Sejahtera..."
+                        </p>
+                        <p><a href="https://quranwbw.com/20:114" target="_blank">Surat Taha 20:114</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ</span><br>
+                            <span class="transliteration">Fa ta'ālā llāhu l-Maliku l-Ḥaqq</span><br>
+                            "Maka Maha Tinggi Allah, Raja Yang Sebenarnya."
+                        </p>
+                        <p><a href="https://quranwbw.com/23:116" target="_blank">Surat Al-Mu'minun 23:116</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ لَآ إِلَـٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ</span><br>
+                            <span class="transliteration">Fa ta'ālā llāhu l-Maliku l-Ḥaqq, lā ilāha illā huwa rabbu l-'arshi l-karīm</span><br>
+                            "Maka Maha Tinggi Allah, Raja Yang Sebenarnya. Tidak ada tuhan selain Dia, Tuhan Pemilik Arsy yang mulia."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مَلِكُ</p>
+                        <p class="transliteration">Yā Malik</p>
+                        <p>Makna: "Wahai Raja"</p>
+                        <p>Membaca nama ini secara rutin dikatakan dapat membawa martabat dan rasa hormat. Membacanya 90 kali setelah sholat Subuh dianjurkan untuk mendapatkan rezeki.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Malik menunjukkan kedaulatan mutlak Allah atas seluruh ciptaan. Dia adalah pemilik sejati dari segala sesuatu, dan semua raja dan penguasa lainnya memperoleh otoritas mereka dari-Nya.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-malik/" target="_blank">https://myislam.org/99-names-of-allah/al-malik/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 99 Names of Allah Project | Source: <a href="https://myislam.org/99-names-of-allah/" target="_blank">myislam.org</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(language).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.language-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        function searchNames() {
+            const input = document.querySelector('.search-box').value.toLowerCase();
+            const nameCards = document.querySelectorAll('.name-card');
+            
+            nameCards.forEach(card => {
+                const name = card.querySelector('h2').textContent.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function bookmarkPage() {
+            alert('Page bookmarked! (This is a demo feature. In a real application, this would save the page to your bookmarks.)');
+        }
+        
+        function downloadHTML() {
+            alert('HTML download started! (This is a demo feature. In a real application, this would download the HTML file.)');
+        }
+        
+        function jumpToName(name) {
+            if (name) {
+                const element = document.getElementById(name);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+</body>
+</html>

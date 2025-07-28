@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>99 Names of Allah - 22-24</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .language-tab.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+        .name-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .name-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .name-card:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .name-card:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .arabic {
+            font-size: 24px;
+            text-align: right;
+            direction: rtl;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .transliteration {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .meaning {
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .description {
+            margin: 10px 0;
+        }
+        .dalil {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            padding: 8px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .bookmark-btn, .download-btn {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .bookmark-btn:hover, .download-btn:hover {
+            background-color: #2980b9;
+        }
+        .jump-to {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .jump-to select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .bonus {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>99 Names of Allah (22-24)</h1>
+        
+        <div class="bonus english-content">
+            Bonus from <a href="https://qfatima.com/a99-audio" target="_blank">https://qfatima.com/a99-audio</a>
+        </div>
+
+        <div class="language-tabs">
+            <button class="language-tab active" onclick="showLanguage('english')">English</button>
+            <button class="language-tab" onclick="showLanguage('indonesian')">Indonesian</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search names..." onkeyup="searchNames()">
+            <div>
+                <button class="bookmark-btn" onclick="bookmarkPage()">Bookmark This Page</button>
+                <button class="download-btn" onclick="downloadHTML()">Download HTML</button>
+            </div>
+        </div>
+
+        <div class="jump-to">
+            <select onchange="jumpToName(this.value)">
+                <option value="">Jump to a Name...</option>
+                <option value="al-khafid">22. Al-Khafid</option>
+                <option value="ar-rafi">23. Ar-Rafi'</option>
+                <option value="al-muizz">24. Al-Mu'izz</option>
+            </select>
+        </div>
+
+        <!-- English Content -->
+        <div id="english" class="language-content active">
+            <div class="name-container">
+                <!-- Al-Khafid -->
+                <div class="name-card" id="al-khafid">
+                    <h2>22. Al-Khafid (The Abaser)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْخَافِضُ</div>
+                    <div class="transliteration">Transliteration: Al-Khāfiḍ</div>
+                    <div class="meaning">Meaning: The Abaser, The Humiliator</div>
+                    <div class="description">
+                        <p>Al-Khafid means Allah lowers whom He wills based on His wisdom. He may abase people in status, wealth or honor as a test or consequence of their actions.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/56:3" target="_blank">Surah Al-Waqi'ah 56:3</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">خَافِضَةٌۭ رَّافِعَةٌۭ</span><br>
+                            <span class="transliteration">Khāfiḍatun rāfi'ah</span><br>
+                            "Abasing and elevating."
+                        </p>
+                        <p><a href="https://quranwbw.com/17:18" target="_blank">Surah Al-Isra 17:18</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">مَّن كَانَ يُرِيدُ ٱلْعَاجِلَةَ عَجَّلْنَا لَهُۥ فِيهَا مَا نَشَآءُ لِمَن نُّرِيدُ ثُمَّ جَعَلْنَا لَهُۥ جَهَنَّمَ</span><br>
+                            <span class="transliteration">Man kāna yurīdu l-'ājilata 'ajjalnā lahū fīhā mā nashā'u li man nurīdu thumma ja'alnā lahū jahannam</span><br>
+                            "Whoever should desire the immediate - We hasten for him from it what We will to whom We intend."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا خَافِضُ</p>
+                        <p class="transliteration">Yā Khāfiḍ</p>
+                        <p>Meaning: "O Abaser"</p>
+                        <p>Reciting this name 500 times is said to help overcome pride and arrogance.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Khafid refers to Allah's attribute of lowering whom He wills in status or honor. This may be a test for the believer or a punishment for the wrongdoer.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-khafid/" target="_blank">https://myislam.org/99-names-of-allah/al-khafid/</a>
+                    </div>
+                </div>
+
+                <!-- Ar-Rafi' -->
+                <div class="name-card" id="ar-rafi">
+                    <h2>23. Ar-Rafi' (The Exalter)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّافِعُ</div>
+                    <div class="transliteration">Transliteration: Ar-Rāfi'</div>
+                    <div class="meaning">Meaning: The Exalter, The Elevator</div>
+                    <div class="description">
+                        <p>Ar-Rafi' means Allah elevates whom He wills in status, honor and rank. He raises up the believers in this world and the Hereafter.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/56:3" target="_blank">Surah Al-Waqi'ah 56:3</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">خَافِضَةٌۭ رَّافِعَةٌۭ</span><br>
+                            <span class="transliteration">Khāfiḍatun rāfi'ah</span><br>
+                            "Abasing and elevating."
+                        </p>
+                        <p><a href="https://quranwbw.com/58:11" target="_blank">Surah Al-Mujadilah 58:11</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍۢ</span><br>
+                            <span class="transliteration">Yarfa'i llāhu alladhīna āmanū minkum wa alladhīna ūtū l-'ilma darajāt</span><br>
+                            "Allah will raise those who have believed among you and those who were given knowledge by degrees."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَافِعُ</p>
+                        <p class="transliteration">Yā Rāfi'</p>
+                        <p>Meaning: "O Exalter"</p>
+                        <p>Reciting this name 351 times is said to bring elevation in status and honor.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir states that Ar-Rafi' refers to Allah's attribute of elevating whom He wills in status, knowledge and honor. He raises up the believers both in this world and the next.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/ar-rafi/" target="_blank">https://myislam.org/99-names-of-allah/ar-rafi/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Mu'izz -->
+                <div class="name-card" id="al-muizz">
+                    <h2>24. Al-Mu'izz (The Honorer)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُعِزُّ</div>
+                    <div class="transliteration">Transliteration: Al-Mu'izz</div>
+                    <div class="meaning">Meaning: The Honorer, The Bestower of Honor</div>
+                    <div class="description">
+                        <p>Al-Mu'izz means Allah gives honor and dignity to whom He wills. True honor comes only from Allah, not from worldly possessions or status.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/3:26" target="_blank">Surah Ali 'Imran 3:26</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ وَتَنزِعُ ٱلْمُلْكَ مِمَّن تَشَآءُ ۖ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ</span><br>
+                            <span class="transliteration">Tu'ti l-mulka man tashā'u wa tanzi'u l-mulka mimman tashā'u wa tu'izzu man tashā'u wa tudhillu man tashā'</span><br>
+                            "You give kingdom to whom You will and take away kingdom from whom You will. You honor whom You will and humble whom You will."
+                        </p>
+                        <p><a href="https://quranwbw.com/63:8" target="_blank">Surah Al-Munafiqun 63:8</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَلِلَّهِ ٱلْعِزَّةُ وَلِرَسُولِهِۦ وَلِلْمُؤْمِنِينَ</span><br>
+                            <span class="transliteration">Wa li-llāhi l-'izzatu wa li-rasūlihī wa li-l-mu'minīn</span><br>
+                            "But honor belongs to Allah and His Messenger and to the believers."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُعِزُّ</p>
+                        <p class="transliteration">Yā Mu'izz</p>
+                        <p>Meaning: "O Honorer"</p>
+                        <p>Reciting this name 117 times is said to bring honor and respect.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Mu'izz refers to Allah's attribute of granting honor and dignity to whom He wills. True honor comes through obedience to Allah, not through worldly means.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-muizz/" target="_blank">https://myislam.org/99-names-of-allah/al-muizz/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indonesian Content -->
+        <div id="indonesian" class="language-content">
+            <div class="name-container">
+                <!-- Al-Khafid -->
+                <div class="name-card" id="al-khafid">
+                    <h2>22. Al-Khafid (Yang Merendahkan)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْخَافِضُ</div>
+                    <div class="transliteration">Transliterasi: Al-Khāfiḍ</div>
+                    <div class="meaning">Makna: Yang Merendahkan, Yang Menghinakan</div>
+                    <div class="description">
+                        <p>Al-Khafid berarti Allah merendahkan siapa yang Dia kehendaki berdasarkan hikmah-Nya. Dia mungkin merendahkan orang dalam status, kekayaan atau kehormatan sebagai ujian atau konsekuensi dari perbuatan mereka.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/56:3" target="_blank">Surat Al-Waqi'ah 56:3</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">خَافِضَةٌۭ رَّافِعَةٌۭ</span><br>
+                            <span class="transliteration">Khāfiḍatun rāfi'ah</span><br>
+                            "Yang merendahkan dan meninggikan."
+                        </p>
+                        <p><a href="https://quranwbw.com/17:18" target="_blank">Surat Al-Isra 17:18</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">مَّن كَانَ يُرِيدُ ٱلْعَاجِلَةَ عَجَّلْنَا لَهُۥ فِيهَا مَا نَشَآءُ لِمَن نُّرِيدُ ثُمَّ جَعَلْنَا لَهُۥ جَهَنَّمَ</span><br>
+                            <span class="transliteration">Man kāna yurīdu l-'ājilata 'ajjalnā lahū fīhā mā nashā'u li man nurīdu thumma ja'alnā lahū jahannam</span><br>
+                            "Barangsiapa menghendaki kehidupan sekarang (duniawi), maka Kami segerakan baginya di dunia itu apa yang Kami kehendaki bagi orang yang Kami kehendaki."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا خَافِضُ</p>
+                        <p class="transliteration">Yā Khāfiḍ</p>
+                        <p>Makna: "Wahai Yang Merendahkan"</p>
+                        <p>Membaca nama ini 500 kali dikatakan dapat membantu mengatasi kesombongan dan keangkuhan.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Khafid merujuk pada sifat Allah yang merendahkan siapa yang Dia kehendaki dalam status atau kehormatan. Ini mungkin merupakan ujian bagi mukmin atau hukuman bagi pelaku kejahatan.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-khafid/" target="_blank">https://myislam.org/99-names-of-allah/al-khafid/</a>
+                    </div>
+                </div>
+
+                <!-- Ar-Rafi' -->
+                <div class="name-card" id="ar-rafi">
+                    <h2>23. Ar-Rafi' (Yang Meninggikan)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّافِعُ</div>
+                    <div class="transliteration">Transliterasi: Ar-Rāfi'</div>
+                    <div class="meaning">Makna: Yang Meninggikan, Yang Mengangkat</div>
+                    <div class="description">
+                        <p>Ar-Rafi' berarti Allah mengangkat siapa yang Dia kehendaki dalam status, kehormatan dan pangkat. Dia meninggikan orang-orang beriman di dunia dan akhirat.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/56:3" target="_blank">Surat Al-Waqi'ah 56:3</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">خَافِضَةٌۭ رَّافِعَةٌۭ</span><br>
+                            <span class="transliteration">Khāfiḍatun rāfi'ah</span><br>
+                            "Yang merendahkan dan meninggikan."
+                        </p>
+                        <p><a href="https://quranwbw.com/58:11" target="_blank">Surat Al-Mujadilah 58:11</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍۢ</span><br>
+                            <span class="transliteration">Yarfa'i llāhu alladhīna āmanū minkum wa alladhīna ūtū l-'ilma darajāt</span><br>
+                            "Allah akan meninggikan orang-orang yang beriman di antaramu dan orang-orang yang diberi ilmu pengetahuan beberapa derajat."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَافِعُ</p>
+                        <p class="transliteration">Yā Rāfi'</p>
+                        <p>Makna: "Wahai Yang Meninggikan"</p>
+                        <p>Membaca nama ini 351 kali dikatakan dapat membawa peningkatan status dan kehormatan.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menyatakan bahwa Ar-Rafi' merujuk pada sifat Allah yang meninggikan siapa yang Dia kehendaki dalam status, ilmu dan kehormatan. Dia mengangkat orang-orang beriman baik di dunia maupun akhirat.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/ar-rafi/" target="_blank">https://myislam.org/99-names-of-allah/ar-rafi/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Mu'izz -->
+                <div class="name-card" id="al-muizz">
+                    <h2>24. Al-Mu'izz (Yang Memuliakan)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُعِزُّ</div>
+                    <div class="transliteration">Transliterasi: Al-Mu'izz</div>
+                    <div class="meaning">Makna: Yang Memuliakan, Pemberi Kehormatan</div>
+                    <div class="description">
+                        <p>Al-Mu'izz berarti Allah memberikan kehormatan dan martabat kepada siapa yang Dia kehendaki. Kehormatan sejati hanya datang dari Allah, bukan dari harta benda atau status duniawi.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/3:26" target="_blank">Surat Ali 'Imran 3:26</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">تُؤْتِى ٱلْمُلْكَ مَن تَشَآءُ وَتَنزِعُ ٱلْمُلْكَ مِمَّن تَشَآءُ ۖ وَتُعِزُّ مَن تَشَآءُ وَتُذِلُّ مَن تَشَآءُ</span><br>
+                            <span class="transliteration">Tu'ti l-mulka man tashā'u wa tanzi'u l-mulka mimman tashā'u wa tu'izzu man tashā'u wa tudhillu man tashā'</span><br>
+                            "Engkau berikan kerajaan kepada orang yang Engkau kehendaki dan Engkau cabut kerajaan dari orang yang Engkau kehendaki. Engkau muliakan orang yang Engkau kehendaki dan Engkau hinakan orang yang Engkau kehendaki."
+                        </p>
+                        <p><a href="https://quranwbw.com/63:8" target="_blank">Surat Al-Munafiqun 63:8</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَلِلَّهِ ٱلْعِزَّةُ وَلِرَسُولِهِۦ وَلِلْمُؤْمِنِينَ</span><br>
+                            <span class="transliteration">Wa li-llāhi l-'izzatu wa li-rasūlihī wa li-l-mu'minīn</span><br>
+                            "Padahal kekuatan dan kemuliaan itu hanyalah bagi Allah, bagi Rasul-Nya dan bagi orang-orang mukmin."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُعِزُّ</p>
+                        <p class="transliteration">Yā Mu'izz</p>
+                        <p>Makna: "Wahai Yang Memuliakan"</p>
+                        <p>Membaca nama ini 117 kali dikatakan dapat membawa kehormatan dan rasa hormat.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Mu'izz merujuk pada sifat Allah yang memberikan kehormatan dan martabat kepada siapa yang Dia kehendaki. Kehormatan sejati datang melalui ketaatan kepada Allah, bukan melalui sarana duniawi.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-muizz/" target="_blank">https://myislam.org/99-names-of-allah/al-muizz/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 99 Names of Allah Project | Source: <a href="https://myislam.org/99-names-of-allah/" target="_blank">myislam.org</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(language).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.language-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        function searchNames() {
+            const input = document.querySelector('.search-box').value.toLowerCase();
+            const nameCards = document.querySelectorAll('.name-card');
+            
+            nameCards.forEach(card => {
+                const name = card.querySelector('h2').textContent.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function bookmarkPage() {
+            alert('Page bookmarked! (This is a demo feature. In a real application, this would save the page to your bookmarks.)');
+        }
+        
+        function downloadHTML() {
+            alert('HTML download started! (This is a demo feature. In a real application, this would download the HTML file.)');
+        }
+        
+        function jumpToName(name) {
+            if (name) {
+                const element = document.getElementById(name);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+</body>
+</html>

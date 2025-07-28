@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>99 Names of Allah - 7-9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .language-tab.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+        .name-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .name-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .name-card:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .name-card:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .arabic {
+            font-size: 24px;
+            text-align: right;
+            direction: rtl;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .transliteration {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .meaning {
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .description {
+            margin: 10px 0;
+        }
+        .dalil {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            padding: 8px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .bookmark-btn, .download-btn {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .bookmark-btn:hover, .download-btn:hover {
+            background-color: #2980b9;
+        }
+        .jump-to {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .jump-to select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .bonus {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>99 Names of Allah (7-9)</h1>
+        
+        <div class="bonus english-content">
+            Bonus from <a href="https://qfatima.com/a99-audio" target="_blank">https://qfatima.com/a99-audio</a>
+        </div>
+
+        <div class="language-tabs">
+            <button class="language-tab active" onclick="showLanguage('english')">English</button>
+            <button class="language-tab" onclick="showLanguage('indonesian')">Indonesian</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search names..." onkeyup="searchNames()">
+            <div>
+                <button class="bookmark-btn" onclick="bookmarkPage()">Bookmark This Page</button>
+                <button class="download-btn" onclick="downloadHTML()">Download HTML</button>
+            </div>
+        </div>
+
+        <div class="jump-to">
+            <select onchange="jumpToName(this.value)">
+                <option value="">Jump to a Name...</option>
+                <option value="al-muhaymin">7. Al-Muhaymin</option>
+                <option value="al-aziz">8. Al-Aziz</option>
+                <option value="al-jabbar">9. Al-Jabbar</option>
+            </select>
+        </div>
+
+        <!-- English Content -->
+        <div id="english" class="language-content active">
+            <div class="name-container">
+                <!-- Al-Muhaymin -->
+                <div class="name-card" id="al-muhaymin">
+                    <h2>7. Al-Muhaymin (The Guardian)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُهَيْمِنُ</div>
+                    <div class="transliteration">Transliteration: Al-Muhaymin</div>
+                    <div class="meaning">Meaning: The Guardian, The Protector, The Witness</div>
+                    <div class="description">
+                        <p>Al-Muhaymin means Allah is the ever-watchful guardian over His creation. He oversees and protects all things, witnessing every action and state of being.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surah Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhaymin</span><br>
+                            "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Bestower of Faith, the Overseer..."
+                        </p>
+                        <p><a href="https://quranwbw.com/5:48" target="_blank">Surah Al-Ma'idah 5:48</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَأَنزَلْنَآ إِلَيْكَ ٱلْكِتَـٰبَ بِٱلْحَقِّ مُصَدِّقًۭا لِّمَا بَيْنَ يَدَيْهِ مِنَ ٱلْكِتَـٰبِ وَمُهَيْمِنًا عَلَيْهِ</span><br>
+                            <span class="transliteration">Wa anzalnā ilayka l-kitāba bi l-ḥaqqi muṣaddiqan li mā bayna yadayhi mina l-kitābi wa muhayminan 'alayh</span><br>
+                            "And We have revealed to you the Book in truth, confirming that which preceded it of the Scripture and as a criterion over it."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُهَيْمِنُ</p>
+                        <p class="transliteration">Yā Muhaymin</p>
+                        <p>Meaning: "O Guardian"</p>
+                        <p>Reciting this name 145 times is said to bring protection and remove fear from one's heart.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Muhaymin means Allah is the Witness over all creation, the Guardian who oversees and protects everything. He is the ultimate authority who judges between truth and falsehood.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-muhaymin/" target="_blank">https://myislam.org/99-names-of-allah/al-muhaymin/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Aziz -->
+                <div class="name-card" id="al-aziz">
+                    <h2>8. Al-Aziz (The Almighty)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْعَزِيزُ</div>
+                    <div class="transliteration">Transliteration: Al-'Azīz</div>
+                    <div class="meaning">Meaning: The Almighty, The Invincible, The Honorable</div>
+                    <div class="description">
+                        <p>Al-Aziz denotes Allah's absolute might and invincibility. He is the supreme victor who cannot be overcome, and all honor and glory belong to Him alone.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surah Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhayminu l-'Azīz</span><br>
+                            "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Bestower of Faith, the Overseer, the Exalted in Might..."
+                        </p>
+                        <p><a href="https://quranwbw.com/3:6" target="_blank">Surah Ali 'Imran 3:6</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ</span><br>
+                            <span class="transliteration">Wa huwa l-'Azīzu l-Ḥakīm</span><br>
+                            "And He is the Exalted in Might, the Wise."
+                        </p>
+                        <p><a href="https://quranwbw.com/54:42" target="_blank">Surah Al-Qamar 54:42</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">كَذَّبُوا۟ بِـَٔايَـٰتِنَا كُلِّهَا فَأَخَذْنَـٰهُمْ أَخْذَ عَزِيزٍۢ مُّقْتَدِرٍۢ</span><br>
+                            <span class="transliteration">Kadhdhabū bi āyātinā kullihā fa akhadhnāhum akhda 'azīzin muqtadir</span><br>
+                            "They denied all Our signs, so We seized them with the seizure of one Exalted in Might and Perfect in Ability."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا عَزِيزُ</p>
+                        <p class="transliteration">Yā 'Azīz</p>
+                        <p>Meaning: "O Almighty One"</p>
+                        <p>Reciting this name 40 times daily is said to bring honor and remove difficulties.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir states that Al-Aziz means Allah is the Almighty who cannot be overcome or resisted. He is the One who grants honor to whom He wills and removes it from whom He wills.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-aziz/" target="_blank">https://myislam.org/99-names-of-allah/al-aziz/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Jabbar -->
+                <div class="name-card" id="al-jabbar">
+                    <h2>9. Al-Jabbar (The Compeller)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْجَبَّارُ</div>
+                    <div class="transliteration">Transliteration: Al-Jabbār</div>
+                    <div class="meaning">Meaning: The Compeller, The Restorer, The Repairer</div>
+                    <div class="description">
+                        <p>Al-Jabbar means Allah mends what is broken, compels the tyrants, and restores what is lacking in His creation. He is the One whose will cannot be resisted.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surah Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhayminu l-'Azīzu l-Jabbār</span><br>
+                            "He is Allah, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Bestower of Faith, the Overseer, the Exalted in Might, the Compeller..."
+                        </p>
+                        <p><a href="https://quranwbw.com/68:20" target="_blank">Surah Al-Qalam 68:20</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَأَصْبَحَتْ كَٱلصَّرِيمِ</span><br>
+                            <span class="transliteration">Fa aṣbaḥat kaṣ-ṣarīm</span><br>
+                            "And it became as though reaped." (Allah's compulsion in destroying the garden of the wicked)
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا جَبَّارُ</p>
+                        <p class="transliteration">Yā Jabbār</p>
+                        <p>Meaning: "O Compeller"</p>
+                        <p>Reciting this name 226 times is said to help overcome oppressors and solve difficult problems.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Jabbar has three meanings: 1) The One who compels tyrants and brings them under His will, 2) The One who repairs and restores what is broken, and 3) The Supreme Being who is high above all creation.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-jabbar/" target="_blank">https://myislam.org/99-names-of-allah/al-jabbar/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indonesian Content -->
+        <div id="indonesian" class="language-content">
+            <div class="name-container">
+                <!-- Al-Muhaymin -->
+                <div class="name-card" id="al-muhaymin">
+                    <h2>7. Al-Muhaymin (Pelindung)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْمُهَيْمِنُ</div>
+                    <div class="transliteration">Transliterasi: Al-Muhaymin</div>
+                    <div class="meaning">Makna: Pelindung, Pengawas, Saksi</div>
+                    <div class="description">
+                        <p>Al-Muhaymin berarti Allah adalah penjaga yang selalu waspada atas ciptaan-Nya. Dia mengawasi dan melindungi segala sesuatu, menyaksikan setiap tindakan dan keadaan makhluk-Nya.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surat Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhaymin</span><br>
+                            "Dialah Allah, tidak ada tuhan selain Dia, Raja, Yang Maha Suci, Yang Maha Sejahtera, Pemberi Keamanan, Pengawas..."
+                        </p>
+                        <p><a href="https://quranwbw.com/5:48" target="_blank">Surat Al-Ma'idah 5:48</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَأَنزَلْنَآ إِلَيْكَ ٱلْكِتَـٰبَ بِٱلْحَقِّ مُصَدِّقًۭا لِّمَا بَيْنَ يَدَيْهِ مِنَ ٱلْكِتَـٰبِ وَمُهَيْمِنًا عَلَيْهِ</span><br>
+                            <span class="transliteration">Wa anzalnā ilayka l-kitāba bi l-ḥaqqi muṣaddiqan li mā bayna yadayhi mina l-kitābi wa muhayminan 'alayh</span><br>
+                            "Dan Kami telah menurunkan Kitab (Al-Quran) kepadamu dengan membawa kebenaran, membenarkan apa yang sebelumnya dari Kitab dan sebagai batu ujian terhadap Kitab-Kitab yang lain."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا مُهَيْمِنُ</p>
+                        <p class="transliteration">Yā Muhaymin</p>
+                        <p>Makna: "Wahai Pelindung"</p>
+                        <p>Membaca nama ini 145 kali dikatakan dapat memberikan perlindungan dan menghilangkan rasa takut dari hati.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Muhaymin berarti Allah adalah Saksi atas semua ciptaan, Pelindung yang mengawasi dan melindungi segala sesuatu. Dia adalah otoritas tertinggi yang memutuskan antara kebenaran dan kebatilan.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-muhaymin/" target="_blank">https://myislam.org/99-names-of-allah/al-muhaymin/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Aziz -->
+                <div class="name-card" id="al-aziz">
+                    <h2>8. Al-Aziz (Yang Maha Perkasa)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْعَزِيزُ</div>
+                    <div class="transliteration">Transliterasi: Al-'Azīz</div>
+                    <div class="meaning">Makna: Yang Maha Perkasa, Yang Tak Terkalahkan, Yang Mulia</div>
+                    <div class="description">
+                        <p>Al-Aziz menunjukkan kekuatan mutlak Allah dan sifat-Nya yang tak terkalahkan. Dia adalah pemenang tertinggi yang tidak dapat diatasi, dan semua kehormatan dan kemuliaan hanya milik-Nya.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surat Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhayminu l-'Azīz</span><br>
+                            "Dialah Allah, tidak ada tuhan selain Dia, Raja, Yang Maha Suci, Yang Maha Sejahtera, Pemberi Keamanan, Pengawas, Yang Maha Perkasa..."
+                        </p>
+                        <p><a href="https://quranwbw.com/3:6" target="_blank">Surat Ali 'Imran 3:6</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ</span><br>
+                            <span class="transliteration">Wa huwa l-'Azīzu l-Ḥakīm</span><br>
+                            "Dan Dialah Yang Maha Perkasa lagi Maha Bijaksana."
+                        </p>
+                        <p><a href="https://quranwbw.com/54:42" target="_blank">Surat Al-Qamar 54:42</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">كَذَّبُوا۟ بِـَٔايَـٰتِنَا كُلِّهَا فَأَخَذْنَـٰهُمْ أَخْذَ عَزِيزٍۢ مُّقْتَدِرٍۢ</span><br>
+                            <span class="transliteration">Kadhdhabū bi āyātinā kullihā fa akhadhnāhum akhda 'azīzin muqtadir</span><br>
+                            "Mereka mendustakan semua ayat-ayat Kami, maka Kami azab mereka dengan azab dari Yang Maha Perkasa lagi Maha Kuasa."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا عَزِيزُ</p>
+                        <p class="transliteration">Yā 'Azīz</p>
+                        <p>Makna: "Wahai Yang Maha Perkasa"</p>
+                        <p>Membaca nama ini 40 kali setiap hari dikatakan dapat membawa kehormatan dan menghilangkan kesulitan.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menyatakan bahwa Al-Aziz berarti Allah adalah Yang Maha Perkasa yang tidak dapat diatasi atau dilawan. Dia adalah Yang memberikan kehormatan kepada siapa yang Dia kehendaki dan mencabutnya dari siapa yang Dia kehendaki.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-aziz/" target="_blank">https://myislam.org/99-names-of-allah/al-aziz/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Jabbar -->
+                <div class="name-card" id="al-jabbar">
+                    <h2>9. Al-Jabbar (Yang Memaksa)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْجَبَّارُ</div>
+                    <div class="transliteration">Transliterasi: Al-Jabbār</div>
+                    <div class="meaning">Makna: Yang Memaksa, Yang Memperbaiki, Yang Mengembalikan</div>
+                    <div class="description">
+                        <p>Al-Jabbar berarti Allah memperbaiki apa yang rusak, memaksa para tiran, dan mengembalikan apa yang kurang dalam ciptaan-Nya. Dia adalah Yang kehendak-Nya tidak dapat dilawan.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/59:23" target="_blank">Surat Al-Hashr 59:23</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ</span><br>
+                            <span class="transliteration">Huwa llāhu lladhī lā ilāha illā huwa l-Maliku l-Quddūsu s-Salāmu l-Mu'minu l-Muhayminu l-'Azīzu l-Jabbār</span><br>
+                            "Dialah Allah, tidak ada tuhan selain Dia, Raja, Yang Maha Suci, Yang Maha Sejahtera, Pemberi Keamanan, Pengawas, Yang Maha Perkasa, Yang Memaksa..."
+                        </p>
+                        <p><a href="https://quranwbw.com/68:20" target="_blank">Surat Al-Qalam 68:20</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَأَصْبَحَتْ كَٱلصَّرِيمِ</span><br>
+                            <span class="transliteration">Fa aṣbaḥat kaṣ-ṣarīm</span><br>
+                            "Maka jadilah kebun itu hitam seperti malam yang gelap gulita." (Pemaksaan Allah dalam menghancurkan kebun orang-orang zalim)
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا جَبَّارُ</p>
+                        <p class="transliteration">Yā Jabbār</p>
+                        <p>Makna: "Wahai Yang Memaksa"</p>
+                        <p>Membaca nama ini 226 kali dikatakan dapat membantu mengatasi penindas dan menyelesaikan masalah yang sulit.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Jabbar memiliki tiga makna: 1) Yang memaksa para tiran dan membawa mereka di bawah kehendak-Nya, 2) Yang memperbaiki dan mengembalikan apa yang rusak, dan 3) Yang Maha Tinggi yang berada di atas semua ciptaan.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-jabbar/" target="_blank">https://myislam.org/99-names-of-allah/al-jabbar/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 99 Names of Allah Project | Source: <a href="https://myislam.org/99-names-of-allah/" target="_blank">myislam.org</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(language).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.language-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        function searchNames() {
+            const input = document.querySelector('.search-box').value.toLowerCase();
+            const nameCards = document.querySelectorAll('.name-card');
+            
+            nameCards.forEach(card => {
+                const name = card.querySelector('h2').textContent.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function bookmarkPage() {
+            alert('Page bookmarked! (This is a demo feature. In a real application, this would save the page to your bookmarks.)');
+        }
+        
+        function downloadHTML() {
+            alert('HTML download started! (This is a demo feature. In a real application, this would download the HTML file.)');
+        }
+        
+        function jumpToName(name) {
+            if (name) {
+                const element = document.getElementById(name);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+</body>
+</html>

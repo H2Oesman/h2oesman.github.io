@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>99 Names of Allah - 16-18</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        .language-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .language-tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #e0e0e0;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        .language-tab.active {
+            background-color: #3498db;
+            color: white;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+        .name-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .name-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            transition: all 0.3s;
+        }
+        .name-card:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .name-card:hover {
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .arabic {
+            font-size: 24px;
+            text-align: right;
+            direction: rtl;
+            margin: 10px 0;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .transliteration {
+            font-style: italic;
+            color: #7f8c8d;
+            margin: 5px 0;
+        }
+        .meaning {
+            font-weight: bold;
+            color: #27ae60;
+            margin: 10px 0;
+        }
+        .description {
+            margin: 10px 0;
+        }
+        .dalil {
+            background-color: #f0f8ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            padding: 8px;
+            width: 300px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .bookmark-btn, .download-btn {
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .bookmark-btn:hover, .download-btn:hover {
+            background-color: #2980b9;
+        }
+        .jump-to {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .jump-to select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+        .bonus {
+            background-color: #e8f4fc;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>99 Names of Allah (16-18)</h1>
+        
+        <div class="bonus english-content">
+            Bonus from <a href="https://qfatima.com/a99-audio" target="_blank">https://qfatima.com/a99-audio</a>
+        </div>
+
+        <div class="language-tabs">
+            <button class="language-tab active" onclick="showLanguage('english')">English</button>
+            <button class="language-tab" onclick="showLanguage('indonesian')">Indonesian</button>
+        </div>
+
+        <div class="controls">
+            <input type="text" class="search-box" placeholder="Search names..." onkeyup="searchNames()">
+            <div>
+                <button class="bookmark-btn" onclick="bookmarkPage()">Bookmark This Page</button>
+                <button class="download-btn" onclick="downloadHTML()">Download HTML</button>
+            </div>
+        </div>
+
+        <div class="jump-to">
+            <select onchange="jumpToName(this.value)">
+                <option value="">Jump to a Name...</option>
+                <option value="al-wahhab">16. Al-Wahhab</option>
+                <option value="ar-razzaq">17. Ar-Razzaq</option>
+                <option value="al-fattah">18. Al-Fattah</option>
+            </select>
+        </div>
+
+        <!-- English Content -->
+        <div id="english" class="language-content active">
+            <div class="name-container">
+                <!-- Al-Wahhab -->
+                <div class="name-card" id="al-wahhab">
+                    <h2>16. Al-Wahhab (The Bestower)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْوَهَّابُ</div>
+                    <div class="transliteration">Transliteration: Al-Wahhāb</div>
+                    <div class="meaning">Meaning: The Bestower, The Great Giver</div>
+                    <div class="description">
+                        <p>Al-Wahhab means Allah is the constant giver of blessings without expecting anything in return. He gives abundantly and continuously to all of His creation.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/3:8" target="_blank">Surah Ali 'Imran 3:8</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ</span><br>
+                            <span class="transliteration">Rabbanā lā tuzigh qulūbanā ba'da idh hadaytanā wa hab lanā min ladunka raḥmatan innaka anta l-Wahhāb</span><br>
+                            "Our Lord, let not our hearts deviate after You have guided us and grant us from Yourself mercy. Indeed, You are the Bestower."
+                        </p>
+                        <p><a href="https://quranwbw.com/38:35" target="_blank">Surah Sad 38:35</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَٱغْفِرْ لِى وَهَبْ لِى مُلْكًۭا لَّا يَنۢبَغِى لِأَحَدٍۢ مِّنۢ بَعْدِىٓ ۖ إِنَّكَ أَنتَ ٱلْوَهَّابُ</span><br>
+                            <span class="transliteration">Faghfir lī wa hab lī mulkan lā yanbaghī li aḥadin min ba'dī innaka anta l-Wahhāb</span><br>
+                            "So forgive me and grant me a kingdom such as will not belong to anyone after me. Indeed, You are the Bestower."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا وَهَّابُ</p>
+                        <p class="transliteration">Yā Wahhāb</p>
+                        <p>Meaning: "O Bestower"</p>
+                        <p>Reciting this name 14 times after Fajr prayer is said to bring sustenance and fulfillment of needs.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Wahhab indicates Allah's attribute of giving without measure or expectation. He bestows His gifts upon all creation, both believers and non-believers alike.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-wahhab/" target="_blank">https://myislam.org/99-names-of-allah/al-wahhab/</a>
+                    </div>
+                </div>
+
+                <!-- Ar-Razzaq -->
+                <div class="name-card" id="ar-razzaq">
+                    <h2>17. Ar-Razzaq (The Provider)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّزَّاقُ</div>
+                    <div class="transliteration">Transliteration: Ar-Razzāq</div>
+                    <div class="meaning">Meaning: The Provider, The Sustainer</div>
+                    <div class="description">
+                        <p>Ar-Razzaq means Allah is the provider of all sustenance, both physical and spiritual. He provides for all creatures and determines their portions.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/51:58" target="_blank">Surah Adh-Dhariyat 51:58</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ</span><br>
+                            <span class="transliteration">Inna llāha huwa r-Razzāqu dhū l-quwwati l-matīn</span><br>
+                            "Indeed, it is Allah who is the [continual] Provider, the firm possessor of strength."
+                        </p>
+                        <p><a href="https://quranwbw.com/11:6" target="_blank">Surah Hud 11:6</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَمَا مِن دَآبَّةٍۢ فِى ٱلْأَرْضِ إِلَّا عَلَى ٱللَّهِ رِزْقُهَا</span><br>
+                            <span class="transliteration">Wa mā min dābbatin fi l-arḍi illā 'alā llāhi rizquhā</span><br>
+                            "And there is no creature on earth but that upon Allah is its provision."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَزَّاقُ</p>
+                        <p class="transliteration">Yā Razzāq</p>
+                        <p>Meaning: "O Provider"</p>
+                        <p>Reciting this name 308 times is said to increase sustenance and remove financial difficulties.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir states that Ar-Razzaq refers to Allah's attribute of providing all necessary sustenance to His creation. He provides both the physical needs of the body and the spiritual nourishment of the soul.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/ar-razzaq/" target="_blank">https://myislam.org/99-names-of-allah/ar-razzaq/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Fattah -->
+                <div class="name-card" id="al-fattah">
+                    <h2>18. Al-Fattah (The Opener)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْفَتَّاحُ</div>
+                    <div class="transliteration">Transliteration: Al-Fattāḥ</div>
+                    <div class="meaning">Meaning: The Opener, The Judge</div>
+                    <div class="description">
+                        <p>Al-Fattah means Allah is the opener of all doors and the solver of all difficulties. He opens the doors of mercy, sustenance, and victory for His servants.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Evidence from Quran:</h3>
+                        <p><a href="https://quranwbw.com/34:26" target="_blank">Surah Saba' 34:26</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِٱلْحَقِّ وَهُوَ ٱلْفَتَّاحُ ٱلْعَلِيمُ</span><br>
+                            <span class="transliteration">Qul yajma'u baynanā rabbunā thumma yaftaḥu baynanā bi l-ḥaqqi wa huwa l-Fattāḥu l-'Alīm</span><br>
+                            "Say, 'Our Lord will bring us together; then He will judge between us in truth. And He is the Knowing Judge.'"
+                        </p>
+                        <p><a href="https://quranwbw.com/7:96" target="_blank">Surah Al-A'raf 7:96</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَلَوْ أَنَّ أَهْلَ ٱلْقُرَىٰٓ ءَامَنُوا۟ وَٱتَّقَوْا۟ لَفَتَحْنَا عَلَيْهِم بَرَكَـٰتٍۢ مِّنَ ٱلسَّمَآءِ وَٱلْأَرْضِ</span><br>
+                            <span class="transliteration">Wa law anna ahla l-qurā āmanū wa ttaqaw la fataḥnā 'alayhim barakātin mina s-samā'i wa l-arḍ</span><br>
+                            "And if only the people of the cities had believed and feared Allah, We would have opened upon them blessings from the heaven and the earth."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Du'a and Practices:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا فَتَّاحُ</p>
+                        <p class="transliteration">Yā Fattāḥ</p>
+                        <p>Meaning: "O Opener"</p>
+                        <p>Reciting this name 489 times is said to help open doors of provision and solve difficult problems.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Commentary from Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir explains that Al-Fattah refers to Allah's attribute of opening all that is closed. He opens doors of mercy, knowledge, provision, and victory for His servants, and He is the ultimate judge who opens the truth between disputing parties.</p>
+                    </div>
+                    <div class="source">
+                        Source: <a href="https://myislam.org/99-names-of-allah/al-fattah/" target="_blank">https://myislam.org/99-names-of-allah/al-fattah/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Indonesian Content -->
+        <div id="indonesian" class="language-content">
+            <div class="name-container">
+                <!-- Al-Wahhab -->
+                <div class="name-card" id="al-wahhab">
+                    <h2>16. Al-Wahhab (Pemberi Karunia)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْوَهَّابُ</div>
+                    <div class="transliteration">Transliterasi: Al-Wahhāb</div>
+                    <div class="meaning">Makna: Pemberi Karunia, Pemberi Yang Maha Dermawan</div>
+                    <div class="description">
+                        <p>Al-Wahhab berarti Allah adalah pemberi berkah yang konstan tanpa mengharapkan imbalan apa pun. Dia memberi dengan berlimpah dan terus-menerus kepada semua ciptaan-Nya.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/3:8" target="_blank">Surat Ali 'Imran 3:8</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ ٱلْوَهَّابُ</span><br>
+                            <span class="transliteration">Rabbanā lā tuzigh qulūbanā ba'da idh hadaytanā wa hab lanā min ladunka raḥmatan innaka anta l-Wahhāb</span><br>
+                            "Ya Tuhan kami, janganlah Engkau condongkan hati kami kepada kesesatan setelah Engkau beri petunjuk, dan karuniakanlah kepada kami rahmat dari sisi-Mu. Sesungguhnya Engkau Maha Pemberi karunia."
+                        </p>
+                        <p><a href="https://quranwbw.com/38:35" target="_blank">Surat Sad 38:35</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">فَٱغْفِرْ لِى وَهَبْ لِى مُلْكًۭا لَّا يَنۢبَغِى لِأَحَدٍۢ مِّنۢ بَعْدِىٓ ۖ إِنَّكَ أَنتَ ٱلْوَهَّابُ</span><br>
+                            <span class="transliteration">Faghfir lī wa hab lī mulkan lā yanbaghī li aḥadin min ba'dī innaka anta l-Wahhāb</span><br>
+                            "Maka ampunilah aku dan anugerahkanlah kepadaku kerajaan yang tidak dimiliki oleh siapa pun setelahku. Sesungguhnya Engkaulah Yang Maha Pemberi."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا وَهَّابُ</p>
+                        <p class="transliteration">Yā Wahhāb</p>
+                        <p>Makna: "Wahai Pemberi Karunia"</p>
+                        <p>Membaca nama ini 14 kali setelah sholat Subuh dikatakan dapat membawa rezeki dan pemenuhan kebutuhan.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Wahhab menunjukkan sifat Allah yang memberi tanpa ukuran atau harapan. Dia menganugerahkan karunia-Nya kepada semua ciptaan, baik mukmin maupun non-mukmin.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-wahhab/" target="_blank">https://myislam.org/99-names-of-allah/al-wahhab/</a>
+                    </div>
+                </div>
+
+                <!-- Ar-Razzaq -->
+                <div class="name-card" id="ar-razzaq">
+                    <h2>17. Ar-Razzaq (Pemberi Rezeki)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلرَّزَّاقُ</div>
+                    <div class="transliteration">Transliterasi: Ar-Razzāq</div>
+                    <div class="meaning">Makna: Pemberi Rezeki, Yang Menjamin Kebutuhan</div>
+                    <div class="description">
+                        <p>Ar-Razzaq berarti Allah adalah pemberi semua rezeki, baik fisik maupun spiritual. Dia menyediakan untuk semua makhluk dan menentukan bagian mereka.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/51:58" target="_blank">Surat Adh-Dhariyat 51:58</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">إِنَّ ٱللَّهَ هُوَ ٱلرَّزَّاقُ ذُو ٱلْقُوَّةِ ٱلْمَتِينُ</span><br>
+                            <span class="transliteration">Inna llāha huwa r-Razzāqu dhū l-quwwati l-matīn</span><br>
+                            "Sesungguhnya Allah Dialah Maha Pemberi rezeki Yang mempunyai kekuatan lagi sangat kokoh."
+                        </p>
+                        <p><a href="https://quranwbw.com/11:6" target="_blank">Surat Hud 11:6</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَمَا مِن دَآبَّةٍۢ فِى ٱلْأَرْضِ إِلَّا عَلَى ٱللَّهِ رِزْقُهَا</span><br>
+                            <span class="transliteration">Wa mā min dābbatin fi l-arḍi illā 'alā llāhi rizquhā</span><br>
+                            "Dan tidak ada suatu binatang melata pun di bumi melainkan Allah-lah yang memberi rezekinya."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا رَزَّاقُ</p>
+                        <p class="transliteration">Yā Razzāq</p>
+                        <p>Makna: "Wahai Pemberi Rezeki"</p>
+                        <p>Membaca nama ini 308 kali dikatakan dapat meningkatkan rezeki dan menghilangkan kesulitan keuangan.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menyatakan bahwa Ar-Razzaq merujuk pada sifat Allah yang menyediakan semua rezeki yang diperlukan bagi ciptaan-Nya. Dia menyediakan baik kebutuhan fisik tubuh maupun nutrisi spiritual jiwa.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/ar-razzaq/" target="_blank">https://myislam.org/99-names-of-allah/ar-razzaq/</a>
+                    </div>
+                </div>
+
+                <!-- Al-Fattah -->
+                <div class="name-card" id="al-fattah">
+                    <h2>18. Al-Fattah (Pembuka)</h2>
+                    <div class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">ٱلْفَتَّاحُ</div>
+                    <div class="transliteration">Transliterasi: Al-Fattāḥ</div>
+                    <div class="meaning">Makna: Pembuka, Hakim</div>
+                    <div class="description">
+                        <p>Al-Fattah berarti Allah adalah pembuka semua pintu dan pemecah semua kesulitan. Dia membuka pintu rahmat, rezeki, dan kemenangan bagi hamba-hamba-Nya.</p>
+                    </div>
+                    <div class="dalil">
+                        <h3>Dalil dari Al-Quran:</h3>
+                        <p><a href="https://quranwbw.com/34:26" target="_blank">Surat Saba' 34:26</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">قُلْ يَجْمَعُ بَيْنَنَا رَبُّنَا ثُمَّ يَفْتَحُ بَيْنَنَا بِٱلْحَقِّ وَهُوَ ٱلْفَتَّاحُ ٱلْعَلِيمُ</span><br>
+                            <span class="transliteration">Qul yajma'u baynanā rabbunā thumma yaftaḥu baynanā bi l-ḥaqqi wa huwa l-Fattāḥu l-'Alīm</span><br>
+                            "Katakanlah: 'Tuhan kita akan mengumpulkan kita semua, kemudian Dia memberi keputusan antara kita dengan benar. Dan Dialah Maha Pembuka (segala sesuatu), Maha Mengetahui.'"
+                        </p>
+                        <p><a href="https://quranwbw.com/7:96" target="_blank">Surat Al-A'raf 7:96</a>:
+                            <span class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">وَلَوْ أَنَّ أَهْلَ ٱلْقُرَىٰٓ ءَامَنُوا۟ وَٱتَّقَوْا۟ لَفَتَحْنَا عَلَيْهِم بَرَكَـٰتٍۢ مِّنَ ٱلسَّمَآءِ وَٱلْأَرْضِ</span><br>
+                            <span class="transliteration">Wa law anna ahla l-qurā āmanū wa ttaqaw la fataḥnā 'alayhim barakātin mina s-samā'i wa l-arḍ</span><br>
+                            "Jikalau sekiranya penduduk negeri-negeri beriman dan bertakwa, pastilah Kami akan melimpahkan kepada mereka berkah dari langit dan bumi."
+                        </p>
+                    </div>
+                    <div class="dua">
+                        <h3>Doa dan Amalan:</h3>
+                        <p class="arabic" style="font-family: 'Traditional Arabic', Arial, sans-serif;">يَا فَتَّاحُ</p>
+                        <p class="transliteration">Yā Fattāḥ</p>
+                        <p>Makna: "Wahai Pembuka"</p>
+                        <p>Membaca nama ini 489 kali dikatakan dapat membantu membuka pintu rezeki dan memecahkan masalah yang sulit.</p>
+                    </div>
+                    <div class="commentary">
+                        <h3>Komentar dari Tafsir Ibn Kathir:</h3>
+                        <p>Ibn Kathir menjelaskan bahwa Al-Fattah merujuk pada sifat Allah yang membuka semua yang tertutup. Dia membuka pintu rahmat, ilmu, rezeki, dan kemenangan bagi hamba-hamba-Nya, dan Dia adalah hakim tertinggi yang membuka kebenaran antara pihak-pihak yang berselisih.</p>
+                    </div>
+                    <div class="source">
+                        Sumber: <a href="https://myislam.org/99-names-of-allah/al-fattah/" target="_blank">https://myislam.org/99-names-of-allah/al-fattah/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2023 99 Names of Allah Project | Source: <a href="https://myislam.org/99-names-of-allah/" target="_blank">myislam.org</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showLanguage(language) {
+            // Hide all language contents
+            document.querySelectorAll('.language-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected language content
+            document.getElementById(language).classList.add('active');
+            
+            // Update active tab
+            document.querySelectorAll('.language-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+        
+        function searchNames() {
+            const input = document.querySelector('.search-box').value.toLowerCase();
+            const nameCards = document.querySelectorAll('.name-card');
+            
+            nameCards.forEach(card => {
+                const name = card.querySelector('h2').textContent.toLowerCase();
+                if (name.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+        
+        function bookmarkPage() {
+            alert('Page bookmarked! (This is a demo feature. In a real application, this would save the page to your bookmarks.)');
+        }
+        
+        function downloadHTML() {
+            alert('HTML download started! (This is a demo feature. In a real application, this would download the HTML file.)');
+        }
+        
+        function jumpToName(name) {
+            if (name) {
+                const element = document.getElementById(name);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        }
+    </script>
+</body>
+</html>

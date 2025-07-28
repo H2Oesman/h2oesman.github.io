@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Asmaul Husna Index</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2em; background: #f9f9f9; }
+    h1 { color: #2c3e50; }
+    ul { padding-left: 0; list-style: none; }
+    li { margin-bottom: 1em; }
+    a { text-decoration: none; color: #2980b9; font-weight: bold; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>99 Nama Allah (Asmaul Husna)</h1>
+  <p>Silakan klik untuk membuka:</p>
+  <ul id="file-list">Sedang memuat…</ul>
+
+  <script>
+    const files = [
+
+"99-Nama_Allah-Asmaul_Husna-01_03.html",
+"99-Nama_Allah-Asmaul_Husna-04_06.html",
+"99-Nama_Allah-Asmaul_Husna-07_09.html",
+"99-Nama_Allah-Asmaul_Husna-10_12.html",
+"99-Nama_Allah-Asmaul_Husna-13_15.html",
+"99-Nama_Allah-Asmaul_Husna-16_18.html",
+"99-Nama_Allah-Asmaul_Husna-19_21.html",
+"99-Nama_Allah-Asmaul_Husna-22_24.html",
+"99-Nama_Allah-Asmaul_Husna-25_27.html",
+"99-Nama_Allah-Asmaul_Husna-28_30.html",
+"99-Nama_Allah-Asmaul_Husna-31_33.html",
+"99-Nama_Allah-Asmaul_Husna-34_36.html",
+"99-Nama_Allah-Asmaul_Husna-37_39.html",
+"99-Nama_Allah-Asmaul_Husna-40_42.html"
+
+    ];
+
+    const listContainer = document.getElementById("file-list");
+
+    async function fetchLabel(file) {
+      try {
+        const res = await fetch(file);
+        const text = await res.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(text, "text/html");
+
+        // Find the first element containing "Jump to a Name"
+        const match = [...doc.querySelectorAll("*")].find(el =>
+		el.textContent.trim().toLowerCase().includes(">jump to a name")
+        );
+
+        return match ? match.textContent.trim() : file;
+      } catch (e) {
+        return file + " ()";
+      }
+    }
+
+    async function buildList() {
+      listContainer.innerHTML = "";
+      for (const file of files) {
+        const label = await fetchLabel(file);
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = file;
+        a.textContent = label;
+        li.appendChild(a);
+        listContainer.appendChild(li);
+      }
+    }
+
+    buildList();
+  </script>
+</body>
+</html>
+ 
